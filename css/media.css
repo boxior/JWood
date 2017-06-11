@@ -1,0 +1,99 @@
+@media screen and (max-width: 768px) {
+
+	.welcome nav ul li, .about nav ul li, .portfolio nav ul li, .contact nav ul li {
+		margin-left: 3%;
+		font-size: 4vw;
+	}
+
+	.scroll {
+		  visibility: hidden;
+	}
+
+	.mobi-scroll {
+		position: absolute;
+		z-index: 1;
+		bottom: 10px;
+		width: 70px;
+		height: 70px;
+		background: red;
+		border-radius: 50%;
+	}
+
+
+	.welcome section div:first-child p {
+		  margin-top: 15%;
+		  font-size: 7vw;
+		}
+	.about {
+		height: auto;
+		padding-bottom: 15vh;
+	}
+	
+	.about section {
+		margin: 5% 0 5% 0;
+		height: auto;
+		  width: 83.33%;
+		  flex-direction: column;
+		}
+
+	.about section img {
+		  width: 83.33%;
+		  margin-right: 0;
+		}
+
+	.about section span {
+		  width: 83.33%;
+		}
+
+	.about section span p:first-child {
+		  font-size: 7vw;
+		}
+	.about section span p:nth-child(2){
+		  font-size: 5vw;
+		  line-height: 7vw;
+		}
+	.about section span p:last-child {
+		  font-size: 4vw;
+		}
+
+	.portfolio {
+		height: auto;
+	}
+
+	.portfolio section {
+		  width: 83.33%;
+		  height: auto;
+		  display: flex;
+		  align-items: center;
+		  margin-bottom: 15vh;
+		}
+
+	.portfolio section>p {
+		  margin-top: 5%;
+		  margin-bottom: 5%;
+		  font-size: 7vw;
+		}
+
+	.portfolio section span {
+		justify-content: space-around;
+	}
+
+	.portfolio section span a {
+	  width:45%;
+	  margin-left: 0;
+	}
+
+	.contact {
+		height: auto;
+	}
+
+	.contact section {
+	  	margin: 10% 0 10% 0;
+		height: auto;
+	}
+
+
+
+
+
+}
