@@ -10,13 +10,29 @@
 	}
 
 	.mobi-scroll {
+
 		position: absolute;
 		z-index: 1;
 		bottom: 10px;
 		width: 70px;
 		height: 70px;
-		background: red;
+		border: 3px solid white;
 		border-radius: 50%;
+	}
+
+	.img-scroll {
+		z-index: 1;
+		visibility: visible;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.about .mobi-scroll {
+		border: 3px solid #bebebe;
 	}
 
 
