@@ -2,7 +2,7 @@
 
 	.welcome nav ul li, .about nav ul li, .portfolio nav ul li, .contact nav ul li {
 		margin-left: 3%;
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 
 	.scroll {
@@ -10,7 +10,7 @@
 	}
 
 	.mobi-scroll {
-
+		visibility: visible;
 		position: absolute;
 		z-index: 1;
 		bottom: 10px;
@@ -21,6 +21,7 @@
 	}
 
 	.img-scroll {
+		height: auto;
 		z-index: 1;
 		visibility: visible;
 		position: absolute;
@@ -31,13 +32,13 @@
 		margin: auto;
 	}
 
+
 	.about .mobi-scroll {
 		border: 3px solid #bebebe;
 	}
 
 
-	.welcome section div:first-child p {
-		  margin-top: 15%;
+	.welcome section .h1 {
 		  font-size: 7vw;
 		}
 	.about {
@@ -61,7 +62,7 @@
 		  width: 83.33%;
 		}
 
-	.about section span p:first-child {
+	.about section h2 {
 		  font-size: 7vw;
 		}
 	.about section span p:nth-child(2){
@@ -77,14 +78,12 @@
 	}
 
 	.portfolio section {
-		  width: 83.33%;
+		  width: 90%;
 		  height: auto;
-		  display: flex;
-		  align-items: center;
 		  margin-bottom: 15vh;
 		}
 
-	.portfolio section>p {
+	.portfolio section .h2 {
 		  margin-top: 5%;
 		  margin-bottom: 5%;
 		  font-size: 7vw;
@@ -108,8 +107,108 @@
 		height: auto;
 	}
 
+	.contact .mobi-scroll {
+		position: relative;
+		margin-top: 10%;
+		margin-bottom: -7vh;
+		border: 3px solid #bebebe;
+		
+	}
+
+	 .contact .img-scroll {
+	 	opacity: 0.3;
+	 	width: 35px;
+		visibility: visible;
+		position: absolute;
+	}
 
 
+	.social img{
+		width: 100%;
+	}
+
+	.footer {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+	.welcome section .h1 {
+	  font-size: 5vw;
+}
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.portfolio section span a {
+	  width:30%;
+	  margin-left: 0;
+	}
+	.portfolio {
+		height: auto;
+	}
+	.portfolio section span {
+		justify-content: space-around;
+	}
+	.portfolio section {
+		  height: auto;
+		  margin-bottom: 15vh;
+		}
+
+	 .about, .about section {
+		height: auto;
+	}
+
+	.about section {
+		margin-bottom: 15vh;
+	}
+
+	.about section img {
+		width: 70%;
+		margin: 0;
+	}
+
+	.about section span {
+		width: 70%;
+	}
+
+	.about section h2 {
+	  font-size: 6vw;
+	}
+	.about section span  p:nth-child(2) {
+	  font-size: 3vw;
+	  line-height: 4vw;
+	}
+	.about section span p:last-child {
+	  font-size: 3.5vw;
+	}
+
+	.welcome nav ul li, .about nav ul li, .portfolio nav ul li, .contact nav ul li {
+	  font-size: 3vw;
+	}
+	.welcome section .h1 {
+		font-size: 4vw;
+	}
+
+	.contact, .contact section {
+		height: auto;
+	}
+
+	.contact section {
+		padding: 10% 0 15% 0;
+	}
 
 
+	.scroll p {
+		font-size: 1.5vw;
+	}
+
+	.scroll img {
+		width: 2vw;
+	}
+
+	.footer p {
+		font-size: 1.5vw;
+	}
 }
