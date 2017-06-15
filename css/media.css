@@ -1,3 +1,5 @@
+
+
 @media screen and (max-width: 768px) {
 
 	.welcome nav ul li, .about nav ul li, .portfolio nav ul li, .contact nav ul li {
@@ -210,5 +212,11 @@
 
 	.footer p {
 		font-size: 1.5vw;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.contact .mobi-scroll {
+		margin-bottom: -5vh;
 	}
 }
