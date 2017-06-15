@@ -285,7 +285,7 @@ button:hover {
 
 .contact section p:first-child {
   font-size: 1.5625vw;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 .contact section p:nth-child(2) {
@@ -298,13 +298,13 @@ button:hover {
 }
 .contact section p:nth-child(3) {
   font-size: 1.5625vw;
-  margin-bottom: 0.5%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 
 .contact section p:nth-child(4) {
   font-size: 2.5vw;
-  margin-top: 1%;
+  margin-bottom: 2%;
 }
 .contact section p:nth-child(4) a {
   color: black;
@@ -313,7 +313,7 @@ button:hover {
 
 .contact section p:nth-child(5) {
   font-size: 1.5625vh;
-  margin-top: 1%;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 
@@ -483,7 +483,7 @@ button:hover {
   }
 
   .contact section {
-      margin: 10% 0 10% 0;
+    margin: 10% 0 10% 0;
     height: auto;
   }
 
@@ -500,6 +500,26 @@ button:hover {
     width: 35px;
     visibility: visible;
     position: absolute;
+  }
+
+  .contact section p:first-child {
+    font-size: 3vw;
+  }
+  .contact section p:nth-child(2) {
+    font-size: 6vw;
+  }
+
+  .contact section p:nth-child(3) {
+    font-size: 3vw;
+  }
+
+  .contact section p:nth-child(4) {
+    font-size: 5vw;
+  }
+
+  .contact section p:nth-child(5) {
+    font-size: 2vh;
+    font-weight: bold;
   }
 
 
