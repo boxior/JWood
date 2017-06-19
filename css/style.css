@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('normalize.css');
+
 @font-face {
     font-family: 'nexa_lightregular';
     src: url('../fonts/nexa-light-webfont.eot');
@@ -10,13 +12,6 @@
          url('../fonts/nexa-light-webfont.svg#nexa_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
 }
 
 html {
@@ -68,7 +63,7 @@ button:hover {
   align-items: flex-start;
 }
 
-.welcome, .about, .portfolio, .contact {
+.sc {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -81,7 +76,7 @@ button:hover {
 
 }
 
-.welcome nav, .about nav, .portfolio nav, .contact nav {
+.sc-nav {
   display: flex;
   width: 90%;
   height: 10vh;
@@ -89,20 +84,20 @@ button:hover {
   border-bottom: 0.3vh solid white;
 }
 
-.welcome nav ul, .about nav ul, .portfolio nav ul, .contact nav ul {
+.sc-nav__ul {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.welcome nav ul li, .about nav ul li, .portfolio nav ul li, .contact nav ul li {
+.sc-nav__ul li {
   list-style-type: none;
   margin-left: 2%;
   font-size: 1.25vw;
 
 
 }
-.welcome nav ul li a, .portfolio nav ul li a{
+.welcome .sc-nav__ul li a, .portfolio .sc-nav__ul li a{
   color: white;
 }
 
@@ -147,24 +142,25 @@ button:hover {
 .scroll img{
   width: 1.5vw;
 }
+
+.scroll img:hover {
+  opacity: 0.5;
+}
+
 .scroll button {
   position: absolute;
   bottom: 5%;left: 50%;
   transform: translateX(-50%);
 }
 
-.scroll img:hover {
-  opacity: 0.5;
-}
-
 .about {
   position: relative;
   background: none;
 }
-.about nav ul li a, .contact nav ul li a{
+.about .sc-nav__ul li a, .contact .sc-nav__ul li a{
   color: #bebebe;
 }
-.about nav, .contact nav {
+.about .sc-nav, .contact .sc-nav {
   border-bottom: 0.3vh solid #bebebe;
 }
 
@@ -192,7 +188,7 @@ button:hover {
   align-items: flex-start;
 }
 
-.about section h2 {
+.about h2 {
   margin-top: 11%;
   margin-bottom: 10%;
   text-transform: uppercase;
@@ -271,8 +267,9 @@ button:hover {
   background: white;
 }
 
+
 .contact section {
-   position: relative;
+  position: relative;
   width: 100%;
   height: 80vh;
   text-transform: uppercase;
@@ -285,12 +282,12 @@ button:hover {
 
 .contact section p:first-child {
   font-size: 1.5625vw;
-  margin-bottom: 2%;
+  margin: 0 0 2% 0;
   font-weight: bold;
 }
 .contact section p:nth-child(2) {
   font-size: 3.125vw;
-  margin-bottom: 2%;
+  margin: 0 0 2% 0;
 }
 .contact section p:nth-child(2) a {
   color: black;
@@ -298,13 +295,13 @@ button:hover {
 }
 .contact section p:nth-child(3) {
   font-size: 1.5625vw;
-  margin-bottom: 2%;
+  margin: 0 0 2% 0;
   font-weight: bold;
 }
 
 .contact section p:nth-child(4) {
   font-size: 2.5vw;
-  margin-bottom: 2%;
+  margin: 0 0 2% 0;
 }
 .contact section p:nth-child(4) a {
   color: black;
@@ -313,7 +310,7 @@ button:hover {
 
 .contact section p:nth-child(5) {
   font-size: 1.5625vh;
-  margin-bottom: 2%;
+  margin: 0 0 2% 0;
   font-weight: bold;
 }
 
@@ -354,7 +351,7 @@ button:hover {
 
 .social{
   display: inline-flex;
-  margin-top: 1%;
+  margin: 1% 0 0 0;
 }
 
 .footer {
