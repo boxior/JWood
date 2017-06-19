@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url('normalize.css');
-
 @font-face {
     font-family: 'nexa_lightregular';
     src: url('../fonts/nexa-light-webfont.eot');
