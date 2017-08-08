@@ -146,12 +146,12 @@ button:hover {
   opacity: 0.5;
 }
 
-.scroll button {
+/*.scroll button {
   position: absolute;
   bottom: 5%;left: 50%;
   transform: translateX(-50%);
 }
-
+*/
 .about {
   position: relative;
   background: none;
@@ -179,7 +179,7 @@ button:hover {
   margin-right: 5%;
 }
 
-.about section span {
+.about section div {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -194,11 +194,11 @@ button:hover {
   font-size: 3.125vw;
   font-weight: bold;
 }
-.about section span  p:nth-child(2) {
+.about section div  p:nth-child(2) {
   font-size: 1.25vw;
   line-height: 2vw;
 }
-.about section span p:last-child {
+.about section div p:last-child {
   margin-top: 9%;
   font-size: 1.875vw;
   font-weight: bold;
