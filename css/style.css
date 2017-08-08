@@ -20,6 +20,7 @@ html {
 body {
   width: 100%;
   min-width: 300px;
+  min-height: 300px;
   font-family: 'nexa_lightregular';
 }
 
@@ -110,8 +111,8 @@ button:hover {
   justify-content: center;
 }
 
-.welcome figure div:first-child img {
-  width: 70%;
+.welcome figure img {
+  width: 30%;
 }
 
 .welcome .h1 {
@@ -120,7 +121,7 @@ button:hover {
   font-weight: normal;
 }
 
-.welcome figure div:first-child {
+.welcome figure {
   text-align: center;
 }
 
@@ -371,7 +372,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
 
-  .welcome nav ul li, .about nav ul li, .portfolio nav ul li, .contact nav ul li {
+  .sc-nav__ul li, .sc-nav__ul li, .sc-nav__ul li, .sc-nav__ul li {
     margin-left: 3%;
     font-size: 3vw;
   }
@@ -405,6 +406,10 @@ button:hover {
     right: 0;
     bottom: 0;
     margin: auto;
+  }
+
+  .welcome figure img {
+    width: 70%;
   }
 
 
@@ -532,7 +537,24 @@ button:hover {
   .welcome .h1 {
     font-size: 5vw;
 }
+  .welcome figure img {
+    width: 60%;
+  }
 
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .welcome figure img {
+    width: 30%;
+  }
+  .welcome .h1 {
+    font-size: 5vw;
+  }
+
+  .mobi-scroll {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
